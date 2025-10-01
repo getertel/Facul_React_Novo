@@ -1,4 +1,7 @@
 {
   "name": "Facul_React_Novo",
-  "slug": "Facul_React_Novo"
+  "slug": "Facul_React_Novo",
+  "plugins": [
+    "expo-router"
+  ]
 }
