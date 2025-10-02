@@ -1,9 +1,11 @@
 {
-  "extends": "expo-module-scripts/tsconfig.plugin",
+  "extends": "expo/tsconfig.base",
   "compilerOptions": {
-    "outDir": "build",
-    "rootDir": "src"
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    }
   },
-  "include": ["./src"],
-  "exclude": ["**/__mocks__/*", "**/__tests__/*"]
+  "include": ["expo-env.d.ts", "src", "app", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules", "build"]
 }
