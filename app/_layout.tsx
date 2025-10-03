@@ -17,6 +17,9 @@ export default function Layout() {
       >
         <Drawer.Screen name="index" options={{ title: '🏠 Início' }} />
         <Drawer.Screen name="Sobre1" options={{ title: 'ℹ️ Sobre' }} />
+        <Drawer.Screen name="ProdutoLista" options={{ title: "📦 Lista de Produtos" }} />
+        <Drawer.Screen name="ProdutoForm" options={{ title: "➕ Novo Produto" }} />
+
       </Drawer>
       <StatusBar barStyle={colorScheme === 'dark' ? 'light-content' : 'dark-content'} />
     </ThemeProvider>
